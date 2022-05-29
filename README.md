@@ -1,2 +1,2 @@
 # PAC-1-HTML-CSS--Portfoli
-Primer exercici
+Exercicis del PAC 1 - HTML CSS - Portfoli
