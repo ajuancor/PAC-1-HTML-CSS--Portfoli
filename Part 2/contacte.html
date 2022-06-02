@@ -1,0 +1,69 @@
+<html>
+    <head></head>
+    <body>
+        <header>
+            <div>
+                <img src="assets/img/logo.png" height="100px" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inici</a>
+                    </li>
+                    <li>
+                       <a href="cv.html">Curriculum Vitae</a>
+                    </li>
+                    <li>
+                        <a href="contacte.html" class="active">Contacte</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1>CONTACTE</h1>
+        <p>Envia'm un missatge per tal de contactar amb tu.</p>
+        
+        <section id="form-contact-info">
+            
+            <div>
+                <form id="contact-form" method="post">
+                    <div>
+                        <label for="contact-nom">Nom</label>
+                        <input for="contact-nom" type="text" name="nom" />
+                        <span class="error_msg" style="display:none;"></span>
+                    </div>
+
+                    <div>
+                        <label for="contact-email">Email</label>
+                        <input id="contact-email" type="text" name="email" value="" required />
+                        <span class="error_msg" style="display:none;"></span>
+                    </div>
+
+                    <div>
+                        <label for="contact-missatge">Missatge</label>
+                        <textarea id="contact-missatge" type="text" name="missatge"></textarea>
+                        <span class="error_msg" style="display:none;"></span>
+                    </div>
+
+                    <div>
+                        <input id="contact-check" type="checkbox" name="check" value="true" required />
+                        <label for="contact-check">He llegit i accepto la política de privacitat</label>
+                        <span class="error_msg" style="display:none;"></span>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="contact-submit">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        
+
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>
