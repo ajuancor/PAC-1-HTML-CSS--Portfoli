@@ -1,0 +1,88 @@
+/*** STYLES CSS ***/
+/* General */
+body {
+    margin: 0;
+    background-color: #fff;
+    text-transform: initial;
+    font-size: 16px;
+    color: #000;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.title {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+/* - Hero - */
+#hero header {
+    position: relative;
+}
+
+#hero .content-title-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hero .content-title-hero .title {
+    margin: 0 auto;
+    text-shadow: 2px 2px 3px #888;
+}
+
+/* Main Header */
+.main-header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #888;
+}
+
+.main-header .img-logo {
+    max-height: 80px;
+}
+
+.main-header nav {
+    align-self: center;
+}
+
+.main-header ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+
+}
+
+.main-header ul li {
+    display: inline-block;
+    font-size: 21px;
+    text-transform: uppercase;
+    padding: 0.6em;
+    letter-spacing: 2px;
+}
+
+.main-header ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.main-header ul li a:hover {
+    color: #000;
+}
+
+/* CV */
+#cv-page table {
+    text-align: center;
+}
+#cv-page table, th, td {
+ border: 1px solid black;
+}
