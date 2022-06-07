@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="title" content="Curriculum Vitae">
     <meta name="description" content="Informació del meu Curriculum Vitae">
     <title>Curriculum Vitae</title>
-  
+    
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body id="cv-page">
@@ -38,39 +39,46 @@
             </header>
     </section>
     
-    <div id="index">
-        <h2>Index</h2>
-        <ul>
-            <li><a href="#personal-info">Dades personals</a></li>
-            <li><a href="#idiomes-info">Idiomes</a></li>
-            <li><a href="#studies-info">Estudis</a></li>
-            <li><a href="#laboral-info">Experiència laboral</a></li>
-        </ul>
-    </div>
-
-    <section id="personal-info">
-        <h2 id="personal">Dades personals</h2>
-        <div>
+    <section id="index" class="cv-section">
+        <div class="container">
+            <h2 class="title-section">Index</h2>
             <ul>
-                <li><strong>Nom:</strong> Manuel</li>
-                <li><strong>Cognoms:</strong> Salinas Reyes</li>
-                <li><strong>Sexe:</strong> masculí</li>
-                <li><strong>Data de naixement:</strong> 14/03/1984</li>
-                <li><strong>Correu electrònic:</strong> manuel@reyes.com</li>
-                <li><strong>Telèfon mòbil:</strong> 689 37 25 87</li>
-            </ul>
-
-            <ul>
-                <li><strong>Adreça:</strong> C/ Cervantes,14</li>
-                <li><strong>Població:</strong> Alcanar</li>
-                <li><strong>Província:</strong> Tarragona</li>
-                <li><strong>DNI:</strong> 48183647E</li>
+                <li><a href="#personal-info" class="btn btn-cv-index">Dades personals</a></li>
+                <li><a href="#idiomes-info" class="btn btn-cv-index">Idiomes</a></li>
+                <li><a href="#studies-info" class="btn btn-cv-index">Estudis</a></li>
+                <li><a href="#laboral-info" class="btn btn-cv-index">Experiència laboral</a></li>
             </ul>
         </div>
     </section>
 
-    <section id="languages-info">
-        <h2 id="languages">Idiomes</h2>
+    <section id="personal-info" class="cv-section">
+        <div class="container">
+            <h2 id="personal" class="title-section">Dades personals</h2>
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li><strong>Nom:</strong> Manuel</li>
+                        <li><strong>Cognoms:</strong> Salinas Reyes</li>
+                        <li><strong>Sexe:</strong> masculí</li>
+                        <li><strong>Data de naixement:</strong> 14/03/1984</li>
+                        <li><strong>Correu electrònic:</strong> manuel@reyes.com</li>
+                        <li><strong>Telèfon mòbil:</strong> 689 37 25 87</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li><strong>Adreça:</strong> C/ Cervantes,14</li>
+                        <li><strong>Població:</strong> Alcanar</li>
+                        <li><strong>Província:</strong> Tarragona</li>
+                        <li><strong>DNI:</strong> 48183647E</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages-info" class="container">
+        <h2 id="languages" class="title-section">Idiomes</h2>
         <table>
             <thead>
                 <tr>
@@ -109,8 +117,8 @@
         </table>
     </section>
 
-    <section id="studies-info">
-        <h2 id="studies">Estudis</h2>
+    <section id="studies-info" class="container">
+        <h2 id="studies" class="title-section">Estudis</h2>
         <div>
             <ul style="list-style-type: circle;">
                 <li>
@@ -134,8 +142,8 @@
         </div>
     </section>
 
-    <section id="laboral-info">
-        <h2 id="laboral">Experiència laboral</h2>
+    <section id="laboral-info" class="container">
+        <h2 id="laboral" class="title-section">Experiència laboral</h2>
         <div>
             <ul style="list-style-type: circle;">
                 <li>
@@ -159,7 +167,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="container">
         <div class="row">
             <ul class="social-media">
                 <li>
