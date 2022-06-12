@@ -1,14 +1,36 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta name="title" content="Index - Presentació">
         <meta name="description" content="Informació del meu projecte">
         <title>Index</title>
+            
+        <!-- Bootstrap 5.1.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Font Awesome 6.1.1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <!-- Roboto -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- Open Sans -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <!-- Main Styles CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
     </head>
-    <body>
-        <header>
+    
+    <body id="home-page">
+        <header class="main-header sticky">
             <div>
-                <img src="assets/img/logo.png" height="100px" />
+                <img src="assets/img/logo.png" class="img-logo" />
             </div>
 
             <nav>
@@ -26,295 +48,310 @@
             </nav>
         </header>
         
-        <section id="hero">
+        <section id="hero" class="custom-hero">
             <header>
-                <img src="assets/img/header.jpg" width="100%" />
+                <div class="content-title-hero">
+                    <h1 class="title">EL MEU PROJECTE</h1>
+                </div>
+    
+                <div class="content-img-hero">
+                    <img src="assets/img/header.jpg" class="img-hero w-100" />
+                </div>
             </header>
-            <h1>EL MEU PROJECTE</h1>
         </section>
         
-        <section id="project-info">
-            <div>
+        <section id="project-info" class="home-section">
+            <div class="container">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis malesuada risus. Morbi porta euismod augue. Ut interdum neque ut nisi vulputate, at consequat eros maximus. Maecenas euismod, nisl nec interdum fringilla, neque justo lacinia erat, et luctus mauris odio ac odio. Nulla facilisi. Nulla et pellentesque dolor. Suspendisse fermentum fringilla neque, nec tincidunt lorem suscipit feugiat. Aliquam in magna vitae metus varius vehicula. Nullam at magna nec erat convallis accumsan mattis eu nunc. Morbi ultricies sit amet sapien non faucibus. Nulla vitae neque iaculis, mollis lectus quis, gravida leo. Vivamus vitae pretium justo. Pellentesque ut sem eget purus blandit sagittis. Vestibulum luctus faucibus elementum. Vestibulum gravida neque magna, at eleifend metus varius eget. Donec tincidunt velit vitae aliquam pellentesque.</p>
                 <p>Pellentesque ultricies sem dui, faucibus aliquet sapien gravida vel. Nunc maximus justo vulputate, mattis neque ac, semper velit. Suspendisse facilisis venenatis leo, laoreet faucibus lorem cursus sit amet. In hac habitasse platea dictumst. Duis vel scelerisque libero. Integer cursus laoreet dui, at elementum sapien pulvinar et. Aenean a ex cursus, sollicitudin nulla eget, bibendum tellus. Pellentesque porttitor augue eu consectetur faucibus. Phasellus iaculis at odio quis viverra. Phasellus mollis egestas molestie. Cras id dictum ligula, consectetur tincidunt mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent vel purus justo. Fusce vel justo tempor, iaculis lectus sit amet, iaculis neque. Sed posuere tincidunt condimentum. Sed sollicitudin molestie est id cursus.</p>                   
                 <p>Morbi rhoncus ex at felis cursus efficitur. Donec ornare, justo sed porttitor consectetur, elit elit egestas tellus, convallis cursus dolor lorem sed elit. Sed quis sem vitae elit posuere suscipit accumsan a felis. Fusce molestie interdum mattis. Suspendisse nunc leo, iaculis non sapien a, congue viverra leo. Etiam bibendum ex tortor. In semper ex at risus ullamcorper luctus. Integer varius, diam eget luctus suscipit, purus leo aliquam tortor, cursus pharetra massa libero at arcu. Aenean pretium ac ante vel vestibulum. Cras consequat ante sed diam fermentum, non tristique risus dictum. Duis sed ultrices metus. Mauris vitae risus at nulla imperdiet condimentum ut porttitor nibh. Pellentesque hendrerit diam odio, et aliquam dui bibendum eget. In pretium tellus eu ultrices ultricies. Etiam sit amet ullamcorper orci, sit amet malesuada mi. Donec vitae nunc in urna eleifend ultricies ac ut sem.</p>
             </div>
         </section>
 
-        <section id="programming-languages">
-            <h1>Els llenguatges de programació que he utilitizat</h1>
-            <div class="row">
-                <div class="col-12 col-sm-4">
-                    <div class="programming-language">
-                        <h2>PHP</h2>
-                        <div>
-                            <a href="https://www.php.net/" target="_blank">
-                                <img src="assets/img/programming-languages/php.png" height="100px" alt="PHP" title="PHP" />
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <p>PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web. Fue creado inicialmente por el programador danés-canadiense Rasmus Lerdorf en 1994. En la actualidad, la implementación de referencia de PHP es producida por The PHP Group. PHP originalmente significaba Personal Home Page (Página personal), pero ahora significa el inicialismon recursivo PHP: Hypertext Preprocessor.</p>
-                            <p>El código PHP suele ser procesado en un servidor web por un intérprete PHP implementado como un módulo, un daemon o como un ejecutable de interfaz de entrada común (CGI). En un servidor web, el resultado del código PHP interpretado y ejecutado —que puede ser cualquier tipo de datos, como el HTML generado o datos de imágenes binarias— formaría la totalidad o parte de una respuesta HTTP. Existen diversos sistemas de plantillas, sistemas de gestión de contenidos y frameworks que pueden emplearse para organizar o facilitar la generación de esa respuesta. Por otra parte, PHP puede utilizarse para muchas tareas de programación fuera del contexto de la web, como aplicaciones gráficas autónomas y el control de drones. También se puede interpretar y ejecutar un código PHP cualquiera a través de una interfaz de línea de comandos (CLI).</p>
-                        </div>
-
-                        <div class="text-center">
-                            <h3>Nivell</h3>
-                            <canvas id="level-php" width="100px" height="50px"></canvas>
-                        </div>
-                        
-                        <script type="text/javascript">
-                            var canvas = document.getElementById("level-php");
-                            var level = canvas.getContext("2d");
-
-                            // Grosor i color
-                            level.lineWidth = 30;
-                            level.strokeStyle = "#cccccc";
-
-                            // Indica la posició i fins a quin punt arriba la linia
-                            level.moveTo(0,0);
-                            level.lineTo(100,0);
-
-                            // Pinta
-                            level.stroke();
+        <section id="programming-languages" class="home-section">
+            <div class="container">
+                <h1>Els llenguatges de programació que he utilitizat</h1>
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="programming-language">
+                            <h2>PHP</h2>
+                            <div>
+                                <a href="https://www.php.net/" target="_blank">
+                                    <img src="assets/img/programming-languages/php.png" height="100px" alt="PHP" title="PHP" />
+                                </a>
+                            </div>
                             
-                            // Crea una nova 'ruta'
-                            level.beginPath();
-                            
-                            // Grosor i color
-                            level.lineWidth = 30;
-                            level.strokeStyle = "#787cb4";
+                            <div>
+                                <p>PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web. Fue creado inicialmente por el programador danés-canadiense Rasmus Lerdorf en 1994. En la actualidad, la implementación de referencia de PHP es producida por The PHP Group. PHP originalmente significaba Personal Home Page (Página personal), pero ahora significa el inicialismon recursivo PHP: Hypertext Preprocessor.</p>
+                                <p>El código PHP suele ser procesado en un servidor web por un intérprete PHP implementado como un módulo, un daemon o como un ejecutable de interfaz de entrada común (CGI). En un servidor web, el resultado del código PHP interpretado y ejecutado —que puede ser cualquier tipo de datos, como el HTML generado o datos de imágenes binarias— formaría la totalidad o parte de una respuesta HTTP. Existen diversos sistemas de plantillas, sistemas de gestión de contenidos y frameworks que pueden emplearse para organizar o facilitar la generación de esa respuesta. Por otra parte, PHP puede utilizarse para muchas tareas de programación fuera del contexto de la web, como aplicaciones gráficas autónomas y el control de drones. También se puede interpretar y ejecutar un código PHP cualquiera a través de una interfaz de línea de comandos (CLI).</p>
+                            </div>
 
-                            // Indica la posició i fins a quin punt arriba la linia
-                            level.moveTo(0,0);
-                            level.lineTo(60,0);
+                            <div class="text-center">
+                                <h3>Nivell</h3>
+                                <canvas id="level-php" width="100px" height="50px"></canvas>
+                            </div>
                             
-                            // Pinta
-                            level.stroke();
-                        </script>
+                            <script type="text/javascript">
+                                var canvas = document.getElementById("level-php");
+                                var level = canvas.getContext("2d");
 
+                                // Grosor i color
+                                level.lineWidth = 30;
+                                level.strokeStyle = "#cccccc";
+
+                                // Indica la posició i fins a quin punt arriba la linia
+                                level.moveTo(0,0);
+                                level.lineTo(100,0);
+
+                                // Pinta
+                                level.stroke();
+                                
+                                // Crea una nova 'ruta'
+                                level.beginPath();
+                                
+                                // Grosor i color
+                                level.lineWidth = 30;
+                                level.strokeStyle = "#787cb4";
+
+                                // Indica la posició i fins a quin punt arriba la linia
+                                level.moveTo(0,0);
+                                level.lineTo(60,0);
+                                
+                                // Pinta
+                                level.stroke();
+                            </script>
+
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-12 col-sm-4">
-                    <div class="programming-language">
-                        <h2>JavaScript</h2>
-                        <div>
-                            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
-                                <img src="assets/img/programming-languages/javascript.jpg" height="100px" alt="JavaScript" title="JavaScript" />
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <p>JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
-                            <p>Se utiliza principalmente del lado del cliente, implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas y JavaScript del lado del servidor (Server-side JavaScript o SSJS). Su uso en aplicaciones externas a la web, por ejemplo en documentos PDF, aplicaciones de escritorio (mayoritariamente widgets) es también significativo.</p>
-                        </div>
-                        
-                        <div class="text-center">
-                            <h3>Nivell</h3>
-                            <canvas id="level-javascript" width="100px" height="50px"></canvas>
-                        </div>
-                        
-                        <script type="text/javascript">
-                            var canvas = document.getElementById("level-javascript");
-                            var level = canvas.getContext("2d");
-
-                            // Grosor i color
-                            level.lineWidth = 30;
-                            level.strokeStyle = "#cccccc";
-
-                            // Indica la posició i fins a quin punt arriba la linia
-                            level.moveTo(0,0);
-                            level.lineTo(100,0);
-
-                            // Pinta
-                            level.stroke();
+                    <div class="col-12 col-sm-4">
+                        <div class="programming-language">
+                            <h2>JavaScript</h2>
+                            <div>
+                                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                                    <img src="assets/img/programming-languages/javascript.jpg" height="100px" alt="JavaScript" title="JavaScript" />
+                                </a>
+                            </div>
                             
-                            // Crea una nova 'ruta'
-                            level.beginPath();
+                            <div>
+                                <p>JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                                <p>Se utiliza principalmente del lado del cliente, implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas y JavaScript del lado del servidor (Server-side JavaScript o SSJS). Su uso en aplicaciones externas a la web, por ejemplo en documentos PDF, aplicaciones de escritorio (mayoritariamente widgets) es también significativo.</p>
+                            </div>
                             
-                            // Grosor i color
-                            level.lineWidth = 30;
-                            level.strokeStyle = "#f99e35";
-
-                            // Indica la posició i fins a quin punt arriba la linia
-                            level.moveTo(0,0);
-                            level.lineTo(35,0);
+                            <div class="text-center">
+                                <h3>Nivell</h3>
+                                <canvas id="level-javascript" width="100px" height="50px"></canvas>
+                            </div>
                             
-                            // Pinta
-                            level.stroke();
-                        </script>
+                            <script type="text/javascript">
+                                var canvas = document.getElementById("level-javascript");
+                                var level = canvas.getContext("2d");
 
+                                // Grosor i color
+                                level.lineWidth = 30;
+                                level.strokeStyle = "#cccccc";
+
+                                // Indica la posició i fins a quin punt arriba la linia
+                                level.moveTo(0,0);
+                                level.lineTo(100,0);
+
+                                // Pinta
+                                level.stroke();
+                                
+                                // Crea una nova 'ruta'
+                                level.beginPath();
+                                
+                                // Grosor i color
+                                level.lineWidth = 30;
+                                level.strokeStyle = "#f99e35";
+
+                                // Indica la posició i fins a quin punt arriba la linia
+                                level.moveTo(0,0);
+                                level.lineTo(35,0);
+                                
+                                // Pinta
+                                level.stroke();
+                            </script>
+
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-12 col-sm-4">
-                    <div class="programming-language">
-                        <h2>Python</h2>
-                        <div>
-                            <a href="https://www.python.org/" target="_blank">
-                               <img src="assets/img/programming-languages/python.png" height="100px" alt="Python" title="Python" />
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <p>Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, ejemplos: Instagram, Netflix, Spotify, Panda 3D, entre otros. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.</p>
-                        </div>
-
-                        <div class="text-center">
-                            <h3>Nivell</h3>
-                            <canvas id="level-python" width="100px" height="50px"></canvas>
-                        </div>
-                        
-                        <script type="text/javascript">
-                            var canvas = document.getElementById("level-python");
-                            var level = canvas.getContext("2d");
-
-                            // Grosor i color
-                            level.lineWidth = 30;
-                            level.strokeStyle = "#cccccc";
-
-                            // Indica la posició i fins a quin punt arriba la linia
-                            level.moveTo(0,0);
-                            level.lineTo(100,0);
-
-                            // Pinta
-                            level.stroke();
+                    <div class="col-12 col-sm-4">
+                        <div class="programming-language">
+                            <h2>Python</h2>
+                            <div>
+                                <a href="https://www.python.org/" target="_blank">
+                                <img src="assets/img/programming-languages/python.png" height="100px" alt="Python" title="Python" />
+                                </a>
+                            </div>
                             
-                            // Crea una nova 'ruta'
-                            level.beginPath();
-                            
-                            // Grosor i color
-                            level.lineWidth = 30;
-                            level.strokeStyle = "#346e9e";
+                            <div>
+                                <p>Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, ejemplos: Instagram, Netflix, Spotify, Panda 3D, entre otros. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.</p>
+                            </div>
 
-                            // Indica la posició i fins a quin punt arriba la linia
-                            level.moveTo(0,0);
-                            level.lineTo(10,0);
+                            <div class="text-center">
+                                <h3>Nivell</h3>
+                                <canvas id="level-python" width="100px" height="50px"></canvas>
+                            </div>
                             
-                            // Pinta
-                            level.stroke();
-                        </script>
+                            <script type="text/javascript">
+                                var canvas = document.getElementById("level-python");
+                                var level = canvas.getContext("2d");
 
+                                // Grosor i color
+                                level.lineWidth = 30;
+                                level.strokeStyle = "#cccccc";
+
+                                // Indica la posició i fins a quin punt arriba la linia
+                                level.moveTo(0,0);
+                                level.lineTo(100,0);
+
+                                // Pinta
+                                level.stroke();
+                                
+                                // Crea una nova 'ruta'
+                                level.beginPath();
+                                
+                                // Grosor i color
+                                level.lineWidth = 30;
+                                level.strokeStyle = "#346e9e";
+
+                                // Indica la posició i fins a quin punt arriba la linia
+                                level.moveTo(0,0);
+                                level.lineTo(10,0);
+                                
+                                // Pinta
+                                level.stroke();
+                            </script>
+
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
         
-        <section id="hobbies-info">
-            <h1>Les meves aficions</h1>
-            <div class="row">
-                <div class="col-3">
-                    <div class="jumbotron">
-                        <p>Jugar a videojocs</p>
-                        <img src="assets/img/icons/gamepad-solid.svg" height="36px" />
+        <section id="hobbies-info" class="home-section">
+            <div class="container">
+                <h1>Les meves aficions</h1>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="jumbotron">
+                            <p>Jugar a videojocs</p>
+                            <img src="assets/img/icons/gamepad-solid.svg" height="36px" />
+                        </div>
                     </div>
-                </div>
-                
-                <div class="col-3">
-                    <div class="jumbotron">
-                        <p>Escoltar música urbana latina</p>
-                        <img src="assets/img/icons/music-solid.svg" height="36px" />
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="jumbotron">
-                        <p>Beure cervesa amb amics</p>
-                        <img src="assets/img/icons/beer-solid.svg" height="36px" />
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="jumbotron">
-                        <p>Jugar a ping pong</p>
-                        <img src="assets/img/icons/ping-pong-solid.svg" height="36px" />
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="jumbotron">
-                        <p>Programar</p>
-                        <img src="assets/img/icons/code-solid.svg" height="36px" />
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="jumbotron">
-                        <p>Cultivar plantes</p>
-                        <img src="assets/img/icons/plant-solid.svg" height="36px" />
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="others-projects-info">
-            <h1>Altres projectes</h1>
-            <div class="card">
-                <img src="assets/img/others-projects/css-patterns.jpg" height="80px" alt="CSS Patterns" title="CSS Patterns" />
-                <div class="card-body">
-                    <h2>CSS Background Patterns</h2>
-                    <p>Bells patrons de fons CSS purs que realment podeu utilitzar als vostres projectes!</p>
-                    <a href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" class="btn btn-default">Saber més</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/img/others-projects/miarcade.png" height="80px" alt="Arcade" title="Arcade" />
-                <div class="card-body">
-                    <h2>MiArcade</h2>
-                    <p>El equipo de MiArcade lo componemos un pequeño equipo de profesionales del mundo del marketing, la carpintería, la tecnología, y el periodismo que amamos la nostalgia, las máquinas recreativas y los sistema de juegos.</p>
-                    <a href="https://miarcade.com/" target="_blank" class="btn btn-default">Saber més</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="assets/img/others-projects/raspberry_pi.jpg" height="80px" alt="Raspberry Pi" title="Raspberry Pi" />
-                <div class="card-body">
-                    <h2>Raspberry Pi</h2>
-                    <p>From industries large and small, to the kitchen table tinkerer, to the classroom coder, we make computing accessible and affordable for everybody.</p>
-                    <a href="https://www.raspberrypi.com/" target="_blank" class="btn btn-default">Saber més</a>
-                </div>
-            </div>
-
-        </section>
-
-
-        <footer>
-            <div class="row">
-                <ul class="social-media">
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px" height="30px">
-                                <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
-                            </svg>
-                        </a>
-                    </li>
                     
-                    <li>
-                        <a href="https://www.twitter.com/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px" height="30px">
-                                <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/>
-                            </svg>
-                        </a>
-                    </li>
+                    <div class="col-3">
+                        <div class="jumbotron">
+                            <p>Escoltar música urbana latina</p>
+                            <img src="assets/img/icons/music-solid.svg" height="36px" />
+                        </div>
+                    </div>
 
-                    <li>
-                        <a href="https://github.com/ajuancor" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px" height="30px">
-                                <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                    <div class="col-3">
+                        <div class="jumbotron">
+                            <p>Beure cervesa amb amics</p>
+                            <img src="assets/img/icons/beer-solid.svg" height="36px" />
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="jumbotron">
+                            <p>Jugar a ping pong</p>
+                            <img src="assets/img/icons/ping-pong-solid.svg" height="36px" />
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="jumbotron">
+                            <p>Programar</p>
+                            <img src="assets/img/icons/code-solid.svg" height="36px" />
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="jumbotron">
+                            <p>Cultivar plantes</p>
+                            <img src="assets/img/icons/plant-solid.svg" height="36px" />
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="row">
-                &copy; Copyright 2022 - Albert Juan Cortina "Juandale8"
+        <section id="others-projects-info" class="home-section">
+            <div class="container">
+                <h1>Altres projectes</h1>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="assets/img/others-projects/css-patterns.jpg" height="80px" alt="CSS Patterns" title="CSS Patterns" />
+                            <div class="card-body">
+                                <h2>CSS Background Patterns</h2>
+                                <p>Bells patrons de fons CSS purs que realment podeu utilitzar als vostres projectes!</p>
+                                <a href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" class="btn btn-default">Saber més</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="assets/img/others-projects/miarcade.png" height="80px" alt="Arcade" title="Arcade" />
+                            <div class="card-body">
+                                <h2>MiArcade</h2>
+                                <p>El equipo de MiArcade lo componemos un pequeño equipo de profesionales del mundo del marketing, la carpintería, la tecnología, y el periodismo que amamos la nostalgia, las máquinas recreativas y los sistema de juegos.</p>
+                                <a href="https://miarcade.com/" target="_blank" class="btn btn-default">Saber més</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="assets/img/others-projects/raspberry_pi.jpg" height="80px" alt="Raspberry Pi" title="Raspberry Pi" />
+                            <div class="card-body">
+                                <h2>Raspberry Pi</h2>
+                                <p>From industries large and small, to the kitchen table tinkerer, to the classroom coder, we make computing accessible and affordable for everybody.</p>
+                                <a href="https://www.raspberrypi.com/" target="_blank" class="btn btn-default">Saber més</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <ul class="social-media d-inline-flex justify-content-center">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter-square"></i>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="https://github.com/ajuancor" target="_blank">
+                                <i class="fa-brands fa-github-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="row justify-content-center text-center">
+                    <span>&copy; Copyright 2022 - Albert Juan Cortina "Juandale8"</span>
+                </div>
+            </div>
         </footer>
+
+        <!-- SCRIPTS -->
+        <!-- Bootstrap 5.1.3 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     </body>
 </html>

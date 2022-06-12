@@ -1,10 +1,19 @@
 /*** STYLES CSS ***/
+/*
 @font-face {
 	font-family: 'Roboto';
 	src: url('./fonts/Roboto/Roboto-Regular.ttf') format('ttf');
 	font-weight: 400;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('./fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf') format('ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+*/
 
 /* General */
 * {
@@ -15,7 +24,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background-color: #fff;
     text-transform: initial;
@@ -32,62 +41,11 @@ body {
     z-index: 1020;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 576px) {
-    .container, .container-sm {
-        max-width: 540px;
-    }
-}
-@media (min-width: 768px) {
-    .container, .container-md, .container-sm {
-        max-width: 720px;
-    }
-}
-@media (min-width: 992px) {
-    .container, .container-lg, .container-md, .container-sm {
-        max-width: 960px;
-    }
-}
-@media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
+/* - Container - */
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1140px;
     }
-}
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-/* - Columns - */
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.col-12 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.col-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
 }
 
 /* - Link - */
@@ -101,31 +59,24 @@ a:hover {
 }
 
 /* - Margins - */
-.mt10 {
-    margin-top: 10px;
-}
-.mt20 {
-    margin-top: 20px;
-}
-.mt30 {
-    margin-top: 30px;
-}
-.mt50 {
-    margin-bottom: 50px;
-}
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.mt50 { margin-bottom: 50px; }
 
-.mb10 {
-    margin-bottom: 10px;
-}
-.mb20 {
-    margin-bottom: 20px;
-}
-.mb30 {
-    margin-bottom: 30px;
-}
-.mb50 {
-    margin-bottom: 50px;
-}
+.mb10 { margin-bottom: 10px; }
+.mb20 { margin-bottom: 20px; }
+.mb30 { margin-bottom: 30px; }
+.mb50 { margin-bottom: 50px; }
+
+/* - Displays - */
+.d-block { display: block; }
+.d-flex { display:flex; }
+.d-inline-block { display: inline-block; }
+.d-inline-flex { display: inline-flex; }
+
+/* - Justify - */
+.justify-content-center { justify-content: center; }
 
 /* - Buttons -  */
 .btn {
@@ -175,22 +126,24 @@ ul {
     background-color: #cccccc;
 }
 
-
-/* - Hero - */
-#hero header {
+/* - Line - */
+.batman-line {
     position: relative;
+    height: 60px !important;
+    margin: 0;
+    opacity: 1;
+    background: #fff;  /* #fedb04 */
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
 }
 
-#hero .content-title-hero {
+.batman-line::after {
+    content: '';
+    background: url('./../img/logo/logo-line.svg');
+    background-size: 100px;
+    width: 100%;
+    height: 60px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#hero .content-title-hero .title {
-    margin: 0 auto;
-    text-shadow: 2px 2px 3px #888;
 }
 
 /* Main Header */
@@ -206,7 +159,12 @@ ul {
 }
 
 .main-header nav {
-    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.main-header nav ul {
+    margin: 0;
 }
 
 .main-header ul li {
@@ -223,14 +181,83 @@ ul {
     background-color: transparent;
 }
 
+.main-header ul li a.active {
+    color: #ffdb04;
+}
+
 .main-header ul li a:hover {
     color: #000;
 }
 
+/* - Hero - */
+.custom-hero header {
+    position: relative;
+}
+
+.custom-hero .content-title-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-hero .content-title-hero .title {
+    text-align: center;
+    margin: 0 auto;
+    /* text-shadow: 2px 2px 3px #888; */
+}
+
+.custom-hero .content-img-hero {
+    position: relative;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.custom-hero .img-hero {
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+/* Main footer */
+.main-footer {
+    background-color: #888;
+    color:#fff;
+    padding: 2rem;
+}
+
+.main-footer .social-media li {
+    padding: 10px;
+}
+
+.main-footer .social-media a {
+    font-size: 36px;
+    color: #fff;
+}
+
+.main-footer .social-media a:hover {
+    color: #ccc;
+}
+
+/* HOME */
+.home-section {
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 /* CV */
 .cv-section {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#cv-page .margin-content {
+    margin: 1.5em auto;
 }
 
 #index ul {
@@ -243,21 +270,138 @@ ul {
     margin: 2em 1em;
 }
 
+/* - Personal info - */
+#personal-info .list-data-personal li {
+    padding: 3px;
+}
+
+#personal-info .img-profile {
+    border: 4px solid #000;
+}
+
+/* - Tables - */
 #cv-page table {
     text-align: center;
+    margin: 1.5em auto;
 }
 
 #cv-page table, th, td {
  border: 1px solid black;
 }
 
+#cv-page .header-table {
+    background-color: #000;
+    color: #fff;
+}
+
+#cv-page table tr td:first-child {
+    font-weight: bold;
+}
+ 
+/* - Studies & Experiencie -  */
+#studies-info .col-text,
+#laboral-info .col-text {
+    align-self: center;
+}
+
+#studies-info ul,
+#laboral-info ul {
+    list-style-type: circle;
+    margin: auto 0;
+}
+
 /* - Buttons - */
 .btn-cv-index {
     background: #ffdb04;
     font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0;
 }
 
 .btn-cv-index:hover {
     background: #000;
     color: #ffdb04;
+}
+
+/* CONTACTE */
+/* - Form contact -  */
+#contacte-page .form-contact-section {
+    margin: 5rem auto;
+}
+
+#contacte-page #contact-form .row  {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+#contacte-page #contact-form input,
+#contacte-page #contact-form textarea {
+    border-radius: 0;
+}
+
+#contacte-page #contact-form #btnPrivacy {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#contacte-page #contact-form #btnPrivacy:hover {
+    color:#ffdb04
+}
+
+#contacte-page #contact-form .btn-contact-submit {
+    background: #ffdb04;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+#contacte-page #contact-form .btn-contact-submit:hover {
+    background: #000;
+    color: #ffdb04;
+}
+
+#contacte-page .form-contact-section .warning-text {
+    font-style: italic;
+}
+
+#contacte-page .form-contact-section sup {
+    color: #ff0000;
+}
+
+/* The Modal (background) */
+#contacte-page .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+ /* Modal Content/Box */
+ #contacte-page .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+ /* The Close Button */
+#contacte-page .close {
+    color: #aaa;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#contacte-page .close:hover,
+#contacte-page .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
