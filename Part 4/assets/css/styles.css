@@ -58,6 +58,11 @@ a:hover {
     color: #ffdb04;
 }
 
+/* - Img - */
+img {
+    max-width: 100%;
+}
+
 /* - Margins - */
 .mt10 { margin-top: 10px; }
 .mt20 { margin-top: 20px; }
@@ -71,11 +76,16 @@ a:hover {
 
 /* - Displays - */
 .d-block { display: block; }
-.d-flex { display:flex; }
+.d-flex { display: flex; }
 .d-inline-block { display: inline-block; }
 .d-inline-flex { display: inline-flex; }
 
+/* - Width & Height - */
+.w-100 { width: 100%; }
+
 /* - Justify - */
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
 .justify-content-center { justify-content: center; }
 
 /* - Buttons -  */
@@ -124,6 +134,11 @@ ul {
 /* - Theme - */
 .gray-theme {
     background-color: #cccccc;
+}
+
+.dark-theme {
+    background-color: #222222;
+    color: #fff;
 }
 
 /* - Line - */
@@ -239,6 +254,17 @@ ul {
 }
 
 /* HOME */
+#home-page .container {
+    width: 100%;
+    padding: 24px 48px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#home-page .main-header {
+    height: 64px;
+}
+
 #home-page .custom-hero {
     position: relative;
     height: 300px;
@@ -267,16 +293,192 @@ ul {
     height: 300px;
 }
 
-/*#home-page .custom-hero .header-background-image {
+#home-page h2.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+}
 
-}*/
+/* - Project info - */
+#home-page .container-project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+    gap: 48px;
+}
 
-.home-section {
+#home-page .row-project-info {
     display: flex;
     align-items: center;
-    min-height: 300px;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 99px;
+}
+
+#home-page #project-info .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+#home-page #project-info .content-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+#home-page .img-project-info {
+    max-width: 266.7px;
+}
+
+/* - Programming language - */
+#home-page .container-programming {
+   /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    */
+    width: 100%;
+    padding: 64px 48px;
+}
+
+#home-page .row-programming {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+#home-page #programming-languages .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+    width: 30vw;
+    /* margin: 15px; */
+    padding: 15px;
+    padding-bottom: 80px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background: #f0f0f0;
+}
+
+#home-page #programming-languages img {
+    height: 100px;
+    margin: 0 auto;
+}
+
+#home-page #programming-languages .text {
+    margin: 20px 2px;
+    height: 400px; 
+    overflow-y: auto;
+}
+
+#home-page #programming-languages .level-programming {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px;
+}
+
+/* - Others projects - */
+#home-page .container-others-projects {
+    width: 100%;
+    padding: 48px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#home-page .row-others-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 2.5rem; */
+}
+
+#home-page #others-projects-info .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-between;
+    width: 30vw;
+    min-height: 100%;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+#home-page #others-projects-info .img-others-projects {
+    display: block;
+    height: 10rem;
+    margin: auto;
+}
+
+#home-page #others-projects-info .content-more-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: #D9D9D9;
+}
+
+#home-page #others-projects-info .content-more-info a {
+    width: 100%;
+    border-radius: 0;
+}
+
+#home-page #others-projects-info .content-more-info a:hover {
+    background: #222222;
+    color: #fff;
+}
+
+/* - Hobbies - */
+#home-page .container-hobbies {
+    width: 100%;
+    padding: 52px 48px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#home-page .row-hobbies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    /* padding: 24px 48px; */
+    gap: 40px;
+}
+
+#home-page #hobbies .btn-hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 15rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    background: #D9D9D9;
+    border: 0px;
+    border-radius: 6px;
+}
+
+#home-page .main-footer {
+    margin-top: 5em;
 }
 
 /* CV */
