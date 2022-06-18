@@ -301,13 +301,38 @@ ul {
     line-height: 39px;
 }
 
+@media (min-width: 576px) {
+    #home-page .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    #home-page .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    #home-page .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #home-page .container {
+        max-width: 1140px;
+    }
+}
+
+
 /* - Project info - */
 #home-page .container-project-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 48px;
-    gap: 48px;
+    gap: 18px;
 }
 
 #home-page .row-project-info {
@@ -316,7 +341,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     padding: 0px;
-    gap: 99px;
+    gap: 4rem;
 }
 
 #home-page #project-info .title {
@@ -349,7 +374,7 @@ ul {
     gap: 48px;
     */
     width: 100%;
-    padding: 64px 48px;
+    padding: 24px 48px 64px;
 }
 
 #home-page .row-programming {
@@ -456,7 +481,7 @@ ul {
     justify-content: center;
     max-width: 100%;
     /* padding: 24px 48px; */
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 #home-page #hobbies .btn-hobbies {
@@ -465,8 +490,8 @@ ul {
     justify-content: space-between;
     gap: 10px;
     width: 15rem;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 24px;
+    margin-bottom: 2.5rem;
     
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -477,8 +502,27 @@ ul {
     border-radius: 6px;
 }
 
+#home-page #hobbies .btn-hobbies img {
+    height: 36px;
+}
+
+#home-page #hobbies .btn-hobbies:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#home-page #hobbies .btn-hobbies:hover img {
+    filter: invert(100%);
+}
+
 #home-page .main-footer {
-    margin-top: 5em;
+    margin-top: 3em;
+    padding: inherit;
+}
+
+#home-page .main-footer .social-media {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* CV */
