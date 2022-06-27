@@ -28,23 +28,67 @@
 
     <body id="contacte-page">
         <header class="main-header sticky">
-            <div>
-                <img src="assets/img/logo.png" class="img-logo" />
+            <div class="desktop-menu">
+                <div class="d-flex">
+                    <img src="assets/img/logo.png" class="img-logo" />
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inici</a>
+                        </li>
+                        <li>
+                        <a href="cv.html">Curriculum Vitae</a>
+                        </li>
+                        <li>
+                            <a href="contacte.html" class="active">Contacte</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
-            <nav>
-                <ul>
-                    <li>
+            <div class="mobile-menu">
+                <div class="d-flex">
+                    <img src="assets/img/logo.png" class="img-logo" />
+                </div>
+    
+                <div id="menu-links-responsive" class="dropdown">
+                    <button class="btn btn-menu" type="button" onclick="showDropdownMenu();">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    
+                    <div id="dropdownMenu" class="dropdown-menu dropdown-content">
                         <a href="index.html">Inici</a>
-                    </li>
-                    <li>
-                       <a href="cv.html">Curriculum Vitae</a>
-                    </li>
-                    <li>
+                        <a href="cv.html">Curriculum Vitae</a>
                         <a href="contacte.html" class="active">Contacte</a>
-                    </li>
-                </ul>
-            </nav>
+                    </div>
+                
+                </div>
+            
+                <script type="text/javascript">
+                    /* Quan un usuari faci click al botó,
+                    mostra o oculta el contingut del menú */
+                    function showDropdownMenu() {
+                      document.getElementById("dropdownMenu").classList.toggle("show");
+                    }
+    
+                    // Tanca el dropdown si l'usuari clica fora del menú
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.btn-menu') && !event.target.matches('.btn-menu i') ) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                </script>
+            </div>
+
         </header>
         
         <section id="hero" class="custom-hero">

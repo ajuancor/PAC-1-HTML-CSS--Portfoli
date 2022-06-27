@@ -826,6 +826,11 @@ ul {
     border-radius: 0;
 }
 
+#contacte-page .form-contact-section h2 {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+}
+
 #contacte-page #contact-form #btnPrivacy {
     text-decoration: underline;
     cursor: pointer;
@@ -891,4 +896,11 @@ ul {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* -- Media Queries --*/
+@media (max-width: 768px) {
+    #contacte-page .content-title-hero {
+        text-align: center;
+    }
 }
